@@ -51,11 +51,6 @@ public abstract class ItemRoomDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(final Void... params) {
-            mDao.deleteAll();
-            Item item = new Item("Hello");
-            mDao.insert(item);
-            item = new Item("World");
-            mDao.insert(item);
             return null;
         }
     }

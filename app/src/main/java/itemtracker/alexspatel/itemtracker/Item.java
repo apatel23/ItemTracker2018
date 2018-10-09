@@ -5,8 +5,6 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
-
-
 @Entity(tableName = "item_table")
 public class Item {
 
@@ -15,7 +13,10 @@ public class Item {
     @ColumnInfo(name = "item")
     private String mItem;
 
-    public Item(String item) {this.mItem = item;}
+    public Item(String item) {
+        this.mItem = item;
+
+    }
 
     public String getItem(){return this.mItem;}
 }
